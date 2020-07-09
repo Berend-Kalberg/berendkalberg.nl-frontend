@@ -14,17 +14,17 @@ const App = () => {
 
     useEffect (() => {
         const fetchItems = async () => {
-              const result = await axios (process.env.REACT_APP_BACKEND_URL + `/articles?title_contains=${query}`)
+            
+            console.log(process.env.REACT_APP_BACKEND_URL)
+            delete process.env.REACT_APP_BACKEND_URL
+            console.log(process.env.REACT_APP_BACKEND_URL)
+            const result = await axios (`https://berendkalberg-backend.herokuapp.com/articles?title_contains=${query}`)
 
-              console.log(process.env.REACT_APP_BACKEND_URL + `/articles?title_contains=${query}`)
+            console.log(process.env.REACT_APP_BACKEND_URL + `/articles?title_contains=${query}`)
 
-              console.log("test")
-
-              console.log(process.env.REACT_APP_TEST_URL)
-
-            //   console.log(result.data)
-              setItems(result.data)
-              setIsLoading(false)
+        //   console.log(result.data)
+            setItems(result.data)
+            setIsLoading(false)
         }
 
     fetchItems()
