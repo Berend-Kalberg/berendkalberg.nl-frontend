@@ -18,6 +18,10 @@ const App = () => {
 
               console.log(process.env.REACT_APP_BACKEND_URL + `/articles?title_contains=${query}`)
 
+              console.log("test")
+
+              console.log(process.env.REACT_APP_TEST_URL)
+
             //   console.log(result.data)
               setItems(result.data)
               setIsLoading(false)
