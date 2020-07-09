@@ -17,6 +17,8 @@ const App = () => {
             
             const result = await axios (`https://berendkalberg-backend.herokuapp.com/articles?title_contains=${query}`)
 
+            console.log(process.env.REACT_APP_BACKEND_URL)
+
         //   console.log(result.data)
             setItems(result.data)
             setIsLoading(false)
