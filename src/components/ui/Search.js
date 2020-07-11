@@ -13,7 +13,7 @@ const Search = ({ getQuery }) => {
             <form>
                 <input 
                     type='text' 
-                    className='form-control' 
+                    className='form-control font-gotham-rounded-book' 
                     placeholder='Zoeken'
                     value={text}
                     onChange={(e) => onChange(e.target.value)}
