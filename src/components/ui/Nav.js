@@ -27,9 +27,11 @@ const Nav = ({ getQuery }) => {
 
             if(this.pageYOffset > 0) {
                 element.classList.add("shadow-2xl")
+                element.classList.remove("border-b")
               
             } else {
                 element.classList.remove("shadow-2xl")
+                element.classList.add("border-b")
             }
           })
 
@@ -37,9 +39,8 @@ const Nav = ({ getQuery }) => {
 
 
     return (
-       
 
-        <nav id="navigation" className="px-6 bg-white flex flex-wrap items-center lg:py-0 py-2 fixed w-full">
+        <nav id="navigation" className="px-6 bg-white flex flex-wrap items-center animated border-b lg:py-0 py-2 fixed w-full">
             <div className="flex-1 flex justify-between items-center">
                 <a href="index.js">
                     <img src={logo} width="56" height="56" alt=""/>
