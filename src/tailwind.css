@@ -99,3 +99,7 @@
 input {
     -webkit-appearance: none;
 }
+
+nav {
+    z-index: 10
+}
