@@ -9,10 +9,37 @@ const Nav = ({ getQuery }) => {
         getQuery(q)
     }
 
+    function docReady(fn) {
+        // see if DOM is already available
+        if (document.readyState === "complete" || document.readyState === "interactive") {
+            // call on next available tick
+            setTimeout(fn, 1);
+        } else {
+            document.addEventListener("DOMContentLoaded", fn);
+        }
+    }    
+
+    docReady(function() {
+        // DOM is loaded and ready for manipulation here
+        window.addEventListener("scroll", function() {
+
+            let element = document.getElementById("navigation")
+
+            if(this.pageYOffset >= 80) {
+                element.classList.add("fixed", "shadow-lg");
+              
+            } else if(this.pageYOffset === 0){
+                element.classList.remove("fixed", "shadow-lg")
+            }
+          })
+
+    });
+
+
     return (
        
 
-        <nav className="px-6 bg-white flex flex-wrap items-center lg:py-0 py-2 border fixed w-full">
+        <nav id="navigation" className="px-6 bg-white flex flex-wrap items-center lg:py-0 py-2 w-full">
             <div className="flex-1 flex justify-between items-center">
                 <a href="index.js">
                     <img src={logo} width="56" height="56" alt=""/>
