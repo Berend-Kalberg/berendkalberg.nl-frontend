@@ -1,8 +1,12 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
+
+import Contact from './contact'
+
+import Nav from './components/ui/Nav'
 import Header from './components/ui/Header'
 import ArticleGrid from './components/articles/ArticleGrid'
-import Search from './components/ui/Search'
+
 
 
 const App = () => {
@@ -25,11 +29,12 @@ const App = () => {
 
     return (
         <div>
-            <Header />
-            <Search getQuery={(q) => setQuery(q)} />
+            <Nav getQuery={(q) => setQuery(q)}/>
+            <Header/>
             <ArticleGrid isLoading={isLoading} items={items}/>
+            <Contact/>
         </div>
-    );
+    )
 }
 
 export default App;

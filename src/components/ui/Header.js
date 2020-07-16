@@ -1,12 +1,11 @@
 import React from 'react'
-import logo from '../../assets/logo.png'
 
-const header = () => {
+const Header = () => {
     return (
-        <header className='center'>
-            <img src={logo} alt='' />
-        </header>
+        <div className="py-20">
+            
+        </div>
     )
 }
 
-export default header
+export default Header

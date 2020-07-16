@@ -6,7 +6,7 @@ const ArticleGrid = ({ items, isLoading}) => {
     return isLoading ? (
     <Spinner />
     ) : (
-    <section className="cards">
+    <section id="blog">
         {items.map(item =>(
             <ArticleItem key={item.id} item={item}></ArticleItem>
         ))}
