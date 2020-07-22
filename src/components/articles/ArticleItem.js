@@ -17,6 +17,9 @@ const ArticleItem = ({ item }) => {
                 <div className="mb-8">
                     <div className="text-gray-900 font-bold mb-2">{item.title}</div>
                 </div>
+                <div className="mb-8">
+                    <div className="text-gray-800 mb-2">{item.content}</div>
+                </div>
                 <div className="flex items-center">
                     <div className="">
                         <p className="text-gray-600 text-xs"><span className="text-xs font-bold">Gebubliceerd op: </span>{item.published}</p>

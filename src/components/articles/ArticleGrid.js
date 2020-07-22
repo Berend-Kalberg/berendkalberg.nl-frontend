@@ -3,6 +3,8 @@ import ArticleItem from './ArticleItem'
 import Spinner from '../ui/Spinner'
 
 const ArticleGrid = ({ items, isLoading}) => {
+
+    
     return isLoading ? (
     <Spinner />
     ) : (

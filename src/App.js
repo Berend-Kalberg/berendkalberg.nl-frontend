@@ -7,6 +7,8 @@ import Nav from './components/ui/Nav'
 import Header from './components/ui/Header'
 import ArticleGrid from './components/articles/ArticleGrid'
 
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+
 
 
 const App = () => {
@@ -27,12 +29,18 @@ const App = () => {
     fetchItems()
     }, [query])
 
+
     return (
         <div>
-            <Nav getQuery={(q) => setQuery(q)}/>
-            <Header/>
-            <ArticleGrid isLoading={isLoading} items={items}/>
-            <Contact/>
+            <Router >
+                <Nav getQuery={(q) => setQuery(q)}/>
+                <Switch>
+                    <Route path="/" exact component={Header}/>
+                </Switch>
+
+                <ArticleGrid isLoading={isLoading} items={items}/>
+                <Route path="/contact" component={Contact}/>
+            </Router>
         </div>
     )
 }
