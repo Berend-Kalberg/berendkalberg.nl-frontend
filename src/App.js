@@ -1,45 +1,24 @@
-import React, {useState, useEffect} from 'react'
-import axios from 'axios'
-
-import Contact from './contact'
+import React from 'react'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 import Nav from './components/ui/Nav'
 import Header from './components/ui/Header'
 import ArticleGrid from './components/articles/ArticleGrid'
-
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-
-
+import ItemDetail from './components/articles/ItemDetail'
+import Contact from './contact'
 
 const App = () => {
-
-    const [items, setItems] = useState([])
-    const [isLoading, setIsLoading] = useState(true)
-    const [query, setQuery] = useState('')
-
-    useEffect (() => {
-        const fetchItems = async () => {
-            
-            const result = await axios (`https://berendkalberg-backend.herokuapp.com/articles?title_contains=${query}`)
-
-            setItems(result.data)
-            setIsLoading(false)
-        }
-
-    fetchItems()
-    }, [query])
-
 
     return (
         <div>
             <Router >
-                <Nav getQuery={(q) => setQuery(q)}/>
+                <Nav />
                 <Switch>
                     <Route path="/" exact component={Header}/>
+                    <Route path="/blog" exact component={ArticleGrid}/>
+                    <Route path="/contact" component={Contact}/>
+                    <Route path="/blog/:slug" component={ItemDetail}/>
                 </Switch>
-
-                <ArticleGrid isLoading={isLoading} items={items}/>
-                <Route path="/contact" component={Contact}/>
             </Router>
         </div>
     )

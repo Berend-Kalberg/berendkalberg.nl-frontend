@@ -3,7 +3,7 @@ import spinner from '../../assets/spinner.svg'
 
 const Spinner = () => {
     return (
-        <img src={spinner} 
+        <img className="py-20" src={spinner} 
             style={{ 
                 width: '64px', 
                 margin: 'auto', 

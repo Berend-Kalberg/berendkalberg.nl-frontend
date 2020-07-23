@@ -1,15 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import logo from '../../assets/logo.png'
 
-const Nav = ({ getQuery }) => {
-    const [text, setText] = useState('')
-
-    const onChange = (q) => {
-        setText(q)
-        getQuery(q)
-    }
-
+const Nav = () => {
+    
     function docReady(fn) {
         // see if DOM is already available
         if (document.readyState === "complete" || document.readyState === "interactive") {
@@ -38,7 +32,6 @@ const Nav = ({ getQuery }) => {
 
     });
 
-
     return (
 
         <nav id="navigation" className="px-6 bg-white flex flex-wrap items-center animated border-b lg:py-0 py-2 fixed w-full">
@@ -54,9 +47,6 @@ const Nav = ({ getQuery }) => {
             <div className="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
             <nav>
                 <ul className="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
-                    <li className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400">
-                        <input type="search" value={text} name="search" onChange={(e) => onChange(e.target.value)} placeholder="Zoeken" className="w-full"/>
-                    </li>
                     <li><a className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="/blog">Blog</a></li>
                     <li><a className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="/contact">Contact</a></li>
                 </ul>
