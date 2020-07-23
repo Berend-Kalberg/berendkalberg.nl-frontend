@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {HashRouter, Switch, Route} from 'react-router-dom'
 
 import Nav from './components/ui/Nav'
 import Header from './components/ui/Header'
@@ -11,15 +11,15 @@ const App = () => {
 
     return (
         <div>
-            <Router >
+            <HashRouter basename='/'>
                 <Nav />
                 <Switch>
                     <Route path="/" exact component={Header}/>
                     <Route path="/blog" exact component={ArticleGrid}/>
-                    <Route path="/contact" component={Contact}/>
+                    <Route path="/contact" exact component={Contact}/>
                     <Route path="/blog/:slug" exact component={ItemDetail}/>
                 </Switch>
-            </Router>
+            </HashRouter>
         </div>
     )
 }
