@@ -11,8 +11,6 @@ const ArticleGrid = () => {
 
     const [query, setQuery] = useState('')
 
-    console.log('hi')
-    
     useEffect (() => {
         const fetchItems = async () => {
             
