@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom'
 
 import Nav from './components/ui/Nav'
 import Header from './components/ui/Header'
@@ -17,8 +17,9 @@ const App = () => {
                     <Route path="/" exact component={Header}/>
                     <Route path="/blog" exact component={ArticleGrid}/>
                     <Route path="/contact" component={Contact}/>
-                    <Route path="/blog/:slug" exact component={ItemDetail}/>
                 </Switch>
+                <Route path="/blog/:slug" exact component={ItemDetail}/>
+                <Redirect to="/blog" />
             </Router>
         </div>
     )
