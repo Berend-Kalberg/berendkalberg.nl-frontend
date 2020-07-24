@@ -18009,7 +18009,7 @@ video {
 * {
   box-sizing: border-box;
   color: #767777;
-  font-family: 'Gotham Rounded Book';
+  font-family: 'Gotham Rounded Book, Arial, Helvetica, sans-serif';
   -webkit-font-smoothing: antialiased;
 }
 
