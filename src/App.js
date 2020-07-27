@@ -7,7 +7,7 @@ import Header from './components/ui/Header'
 import About from './components/About'
 import ArticleGrid from './components/articles/ArticleGrid'
 import ItemDetail from './components/articles/ItemDetail'
-import Contact from './Contact'
+import Contact from './components/Contact'
 
 const NoMatch = ({location}) => (
     <div className="pt-20">
