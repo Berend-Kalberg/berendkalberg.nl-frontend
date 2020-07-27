@@ -34,7 +34,7 @@ const Nav = () => {
 
     return (
 
-        <nav id="navigation" className="px-6 bg-white flex flex-wrap items-center animated border-b lg:py-0 py-2 fixed w-full">
+        <nav id="navigation" className="px-6 bg-white flex flex-wrap items-center animated border-b lg:py-0 fixed w-full">
             <div className="flex-1 flex justify-between items-center">
                 <a href="/">
                     <img src={logo} width="56" height="56" alt=""/>
