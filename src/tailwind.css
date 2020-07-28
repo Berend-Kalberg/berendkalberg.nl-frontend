@@ -64,7 +64,7 @@
 
 @font-face {
     font-family: 'Gotham Rounded Book';
-    src: url('./assets/fonts/gothamrounded/GothamRounded-Book.woff2') format('woff2'),
+    src: url('./assets/fonts/gothamrounded/GothamRounded-Book.otf') format('otf'),
         url('./assets/fonts/gothamrounded/GothamRounded-Book.woff') format('woff');
     font-weight: normal;
     font-style: normal;
