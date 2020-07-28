@@ -1,16 +1,18 @@
 import React from 'react'
+import profile from '../../assets/profile-circle.png'
 
 const Header = () => {
     return (
-        <div>
-            <section className="masthead" role="img" aria-label="Image Description">
-                <div>
-                    <h1>
-                        Wie ben ik?
-                    </h1>
-                </div>
-                
-            </section>
+        <div className="masthead" role="img" aria-label="header">
+            <div>
+                <img src={profile} alt="profile" className="rounded-full mb-10 header-img border-orange-500"/>
+                <h2>
+                    CREATIVE
+                </h2>
+                <h2>
+                    DEVELOPER
+                </h2>
+            </div>
         </div>
     )
 }

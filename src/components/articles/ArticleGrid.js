@@ -27,7 +27,6 @@ const ArticleGrid = () => {
     <Spinner /> 
     ) : (
     <div className="pt-20">
-        <h1>Blog Page</h1>
         <SearchBar getQuery={(q) => setQuery(q)}/>
         {items.map(item =>(
             <ArticleItem key={item.id} item={item}></ArticleItem>

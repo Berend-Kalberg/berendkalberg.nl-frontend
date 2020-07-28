@@ -86,8 +86,20 @@
     box-sizing: border-box;
     color: #767777;
     font-family: 'Gotham Rounded Book';
+    font-size: 19px;
+    font-weight: 500;
     -webkit-font-smoothing: antialiased;
 }
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  main {
+    flex-grow: 1; /* Or flex-grow: 1;*/
+  }
 
 @media (min-width: 300px) {
     .sm\:w-3\/4 {
@@ -107,13 +119,14 @@
 
 input {
     -webkit-appearance: none;
+    line-height: 0px;
 }
 
 /* Navigation */
 
 nav {
     z-index: 10;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 #menu-toggle:checked + #menu {
@@ -129,49 +142,66 @@ nav {
     align-items: center;
     flex-direction: column;
     text-align: center;
-   
     overflow: hidden;
     background-size: cover;
-
     height: 100vh; 
-    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/hero-medium.jpg) no-repeat fixed;
+    background: #110e16 no-repeat fixed;
+}
+
+.masthead-white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    background-size: cover;
+    height: 100vh; 
+    background: #ffffff no-repeat fixed;
+}
+
+.header-img {
+    display: inline-flex;
+    border-style: solid;
+    border-width: 2px;
+    width: 256px;
 }
 
 
 @screen md {
-    .masthead {
-        background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/hero.png) no-repeat fixed;
+    .masthead div h2 {
+        font-size: 4.5em !important;
+    }
+    .masthead-white div h2 {
+        font-size: 4.5em !important;
     }
 }
 
 
-.masthead div h1 {
+.masthead div h2 {
+    font-family: 'Gotham Rounded Bold';
     font-style: normal;
-    font-weight: bold;
-    color: #eee;
-    font-size: 9vmin;
+    font-weight: 900;
+    color: #ff8a00;
+    font-size: 2.5em;
     letter-spacing: 0.03em;
-    line-height: 1;
-    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+    line-height: 81px;
     filter: none;
+    position: relative;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
 } 
 
-.hero {
-    width: 100%;
-}
-
-.wrapper {
+.masthead-white  div h2 {
+    font-family: 'Gotham Rounded Bold';
+    font-style: normal;
+    font-weight: 900;
+    color: #1c2e57;
+    font-size: 2.5em;
+    letter-spacing: 0.03em;
+    line-height: 81px;
+    filter: none;
     position: relative;
-    text-align: center;
-    color: white;
-  }
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+}
 
 /* Markdown */
 
