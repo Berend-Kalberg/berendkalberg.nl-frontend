@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom'
 
 import Nav from './components/ui/Nav'
 import Footer from './components/ui/Footer'
@@ -7,12 +7,10 @@ import Header from './components/ui/Header'
 import About from './components/About'
 import ArticleGrid from './components/articles/ArticleGrid'
 import ItemDetail from './components/articles/ItemDetail'
-import BlogHeader from './components/BlogHeader'
+import BlogHeader from './components/articles/BlogHeader'
 
-const NoMatch = ({location}) => (
-    <div className="pt-20 px-5">
-        <h1><code>{location.pathname}</code> bestaat niet, probeer een andere URL.</h1>
-    </div>
+const NoMatch = () => (
+    <Redirect to="/"/>
 )
 
 
@@ -24,7 +22,6 @@ const App = () => {
                 <Nav />
                 <Route exact path="/blog" component={BlogHeader}/>
                 <Switch>
-
                     <Route exact path="/" render={props => 
                         <div>
                             <Header />

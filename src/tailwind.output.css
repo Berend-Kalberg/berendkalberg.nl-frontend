@@ -17981,7 +17981,7 @@ video {
 @font-face {
   font-family: 'Gotham Rounded Book';
 
-  src: url('./assets/fonts/gothamrounded/GothamRounded-Book.woff2') format('woff2'),
+  src: url('./assets/fonts/gothamrounded/GothamRounded-Book.otf') format('otf'),
         url('./assets/fonts/gothamrounded/GothamRounded-Book.woff') format('woff');
 
   font-weight: normal;
@@ -18113,7 +18113,6 @@ nav {
   -webkit-filter: none;
           filter: none;
   position: relative;
-  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .masthead-white  div h2 {
@@ -18134,6 +18133,10 @@ nav {
 .py-05 {
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
+}
+
+.markdown {
+  font-size: 0.875rem;
 }
 
 .markdown {
@@ -18174,8 +18177,7 @@ nav {
 
 .markdown h1 {
   line-height: 1.25;
-  border-bottom-width: 1px;
-  font-size: 2.25rem;
+  font-size: 1.875rem;
   font-weight: 600;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
@@ -18184,7 +18186,6 @@ nav {
 
 .markdown h2 {
   line-height: 1.25;
-  border-bottom-width: 1px;
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
@@ -18194,7 +18195,7 @@ nav {
 
 .markdown h3 {
   line-height: 1.375;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
@@ -18202,7 +18203,7 @@ nav {
 
 .markdown h4 {
   line-height: 1;
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 600;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
@@ -18210,7 +18211,7 @@ nav {
 
 .markdown h5 {
   line-height: 1.25;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
@@ -18272,11 +18273,37 @@ nav {
   .markdown pre code {
     font-size: 0.5rem;
   }
+
+  .markdown img {
+    width: 100% !important;
+  }
+
+  .container {
+    max-width: 95vw;
+  }
 }
 
 @media (min-width: 768px) {
   .markdown pre code {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
+  }
+
+  .markdown img {
+    width: 60% !important;
+  }
+
+  .container {
+    max-width: 80vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .markdown img {
+    width: 50% !important;
+  }
+
+  .container {
+    max-width: 60vw;
   }
 }
 
@@ -18333,6 +18360,7 @@ nav {
 .markdown img {
   margin-left: auto;
   margin-right: auto;
+  width: 60%;
 }
 
 /* Override pygments style background color. */
@@ -18341,12 +18369,6 @@ nav {
   --bg-opacity: 1 !important;
   background-color: #f7fafc !important;
   background-color: rgba(247, 250, 252, var(--bg-opacity)) !important;
-}
-
-@media (min-width: 300px) {
-  .container {
-    max-width: 90vw;
-  }
 }
 
 @media (min-width: 0px) {

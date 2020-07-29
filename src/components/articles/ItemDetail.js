@@ -36,7 +36,6 @@ const ItemDetail = ( {match} ) => {
             setItem(fakeItem)
         } else {
             setItem(item)
-            console.log(item.length)
         }
         setIsLoading(false)
     }
@@ -46,7 +45,7 @@ const ItemDetail = ( {match} ) => {
     <Spinner /> 
     ) : (
     <div className="mx-auto container pt-20 px-4">
-        <h1 className="font-bold">{item[0].title}</h1>
+        <h1 className="font-bold text-3xl">{item[0].title}</h1>
         <div className="markdown">
             <ReactMarkdown source={item[0].content}/>
         </div>

@@ -26,7 +26,7 @@ const ArticleGrid = () => {
     return isLoading ? (
     <Spinner /> 
     ) : (
-    <div className="pt-20">
+    <div className="h-screen">
         <SearchBar getQuery={(q) => setQuery(q)}/>
         {items.map(item =>(
             <ArticleItem key={item.id} item={item}></ArticleItem>

@@ -188,7 +188,6 @@ nav {
     line-height: 81px;
     filter: none;
     position: relative;
-    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
 } 
 
 .masthead-white  div h2 {
@@ -208,6 +207,10 @@ nav {
 .py-05 {
 padding-top: 0.125rem;
 padding-bottom: 0.125rem;
+}
+
+.markdown {
+    @apply text-sm;
 }
 
 .markdown {
@@ -239,23 +242,23 @@ padding-bottom: 0.125rem;
 }
 
 .markdown h1 {
-@apply leading-tight border-b text-4xl font-semibold mb-4 mt-6 pb-2;
+@apply leading-tight text-3xl font-semibold mb-4 mt-6 pb-2;
 }
 
 .markdown h2 {
-@apply leading-tight border-b text-2xl font-semibold mb-4 mt-6 pb-2;
+@apply leading-tight text-2xl font-semibold mb-4 mt-6 pb-2;
 }
 
 .markdown h3 {
-@apply leading-snug text-lg font-semibold mb-4 mt-6;
+@apply leading-snug text-xl font-semibold mb-4 mt-6;
 }
 
 .markdown h4 {
-@apply leading-none text-base font-semibold mb-4 mt-6;
+@apply leading-none text-lg font-semibold mb-4 mt-6;
 }
 
 .markdown h5 {
-@apply leading-tight text-sm font-semibold mb-4 mt-6;
+@apply leading-tight text-base font-semibold mb-4 mt-6;
 }
 
 .markdown h6 {
@@ -282,11 +285,34 @@ padding-bottom: 0.125rem;
     .markdown pre code {
         font-size: 0.5rem;
     }
+    .markdown img {
+        @apply w-full !important;
+    }
+
+    .container {
+        max-width: 95vw;
+    }
 }
 
 @screen md {
     .markdown pre code {
-        @apply text-sm;
+        @apply text-xs;
+    }
+    .markdown img {
+        @apply w-3/5 !important;
+    }
+
+    .container {
+        max-width: 80vw;
+    }
+}
+
+@screen lg {
+    .markdown img {
+        @apply w-1/2 !important;
+    }
+    .container {
+        max-width: 60vw;
     }
 }
 
@@ -315,17 +341,10 @@ padding-bottom: 0.125rem;
 }
 
 .markdown img {
-    @apply mx-auto;
+    @apply mx-auto w-3/5;
 }
 
 /* Override pygments style background color. */
 .markdown .highlight pre {
 @apply bg-gray-100 !important;
-}
-  
-
-@media (min-width: 300px) {
-    .container {
-        max-width: 90vw;
-    }
 }

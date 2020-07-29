@@ -10,8 +10,8 @@ const SearchBar = ({ getQuery }) => {
     }
 
     return (
-        <div className="px-0 block border hover:border-indigo-400 my-20 mx-10 rounded-lg">
-            <DebounceInput minLength={1} debounceTimeout={1000}type="search" value={text} name="search" onChange={(e) => onChange(e.target.value)} placeholder="Zoeken" className="w-full lg:p-4 py-3 px-1 rounded-lg"/>
+        <div className="px-0 lg:w-3/4 sm:w-3/4 md:w-1/2 lg:flex mx-auto block border hover:border-indigo-400 mt-20 rounded-lg">
+            <DebounceInput minLength={1} debounceTimeout={1000}type="search" value={text} name="search" onChange={(e) => onChange(e.target.value)} placeholder="Zoeken door alle blogposts" className="w-full lg:p-4 py-3 px-1 rounded-lg"/>
         </div>
     )
 }
