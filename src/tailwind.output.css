@@ -18092,6 +18092,12 @@ nav {
   width: 256px;
 }
 
+@media (min-width: 0px) {
+  .pdf {
+    height: 300px;
+  }
+}
+
 @media (min-width: 768px) {
   .masthead div h2 {
     font-size: 4.5em !important;
@@ -18099,6 +18105,16 @@ nav {
 
   .masthead-white div h2 {
     font-size: 4.5em !important;
+  }
+
+  .pdf {
+    height: 30vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pdf {
+    height: 700px;
   }
 }
 

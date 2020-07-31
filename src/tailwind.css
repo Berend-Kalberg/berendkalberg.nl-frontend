@@ -167,6 +167,12 @@ nav {
     width: 256px;
 }
 
+@screen sm {
+    .pdf {
+        height: 300px;
+    }
+}
+
 
 @screen md {
     .masthead div h2 {
@@ -174,6 +180,15 @@ nav {
     }
     .masthead-white div h2 {
         font-size: 4.5em !important;
+    }
+    .pdf {
+        height: 30vh;
+    }
+}
+
+@screen lg {
+    .pdf {
+        height: 700px;
     }
 }
 
