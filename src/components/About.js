@@ -1,5 +1,18 @@
 import React from 'react'
 
+// import resume from '../assets/resume.pdf'
+
+
+// TODO
+// Make CV available as html on mainpage (pdf to html converter)
+// Make CV downloadable as pdf (as link or as iframe)
+// Add location / work area to about page
+// Split portfolio from blog into its own area
+// Add styling to categories in ArticleItem.js
+// Add styling to cv section in about section
+
+
+
 const About = () => {
     return (
         <div>
@@ -26,6 +39,17 @@ const About = () => {
                     <h2>Meer weten over mijn werk?</h2>
                     <br></br>
                     <h3>Bekijk mijn <span className="text-blue-500"><a href="/blog">blog</a></span></h3>
+                </div>
+            </div>
+            <div className="masthead-white">
+                <div>
+                    <h2>Niewsgierig naar mijn ervaring?</h2>
+                    <br></br>
+                    <h3>Bekijk hier mijn CV</h3>
+                    <br></br>
+                    <iframe src="./resume.pdf" type="application/pdf" width="100%" height="600px">
+                        Deze browser ondersteund geen PDF's. Download de PDF om deze in te zien
+                    </iframe>
                 </div>
             </div>
         </div>
