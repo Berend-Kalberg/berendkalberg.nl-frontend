@@ -10,6 +10,9 @@ import React from 'react'
 // Split portfolio from blog into its own area
 // Add styling to categories in ArticleItem.js
 // Add styling to cv section in about section
+// Better pdf layout for screens
+// pdf.js maybe?
+
 
 
 

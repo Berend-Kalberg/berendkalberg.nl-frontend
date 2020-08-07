@@ -19,7 +19,9 @@ const ArticleItem = ({ item }) => {
             
             <div className="border-r border-b border-l w-full border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
                 <div className="mb-8">
-                    <h2 className="text-gray-800 text-xl mb-2">{item.title}</h2>
+                    <Link to={`/blog/${item.slug}`}>
+                        <h2 className="text-gray-800 text-xl mb-2">{item.title}</h2>
+                    </Link>
                 </div>
                 <div className="">
                     <p className="text-gray-600 text-xs">Gepubliceerd op: <span className="text-orange-500 text-xs">{item.published}</span></p>
