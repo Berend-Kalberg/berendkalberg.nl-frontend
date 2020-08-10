@@ -12,6 +12,7 @@ const Header = () => {
                 <h2>
                     DEVELOPER
                 </h2>
+                <h3>Opzoek naar meewerkstage periode september - december/januari</h3>
             </div>
         </div>
     )
