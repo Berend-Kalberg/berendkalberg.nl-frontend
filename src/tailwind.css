@@ -300,9 +300,7 @@ padding-bottom: 0.125rem;
     .markdown pre code {
         font-size: 0.5rem;
     }
-    .markdown img {
-        @apply w-full !important;
-    }
+
 
     .container {
         max-width: 95vw;
@@ -313,9 +311,6 @@ padding-bottom: 0.125rem;
     .markdown pre code {
         @apply text-xs;
     }
-    .markdown img {
-        @apply w-3/5 !important;
-    }
 
     .container {
         max-width: 80vw;
@@ -323,9 +318,7 @@ padding-bottom: 0.125rem;
 }
 
 @screen lg {
-    .markdown img {
-        @apply w-1/2 !important;
-    }
+
     .container {
         max-width: 60vw;
     }
@@ -363,3 +356,13 @@ padding-bottom: 0.125rem;
 .markdown .highlight pre {
 @apply bg-gray-100 !important;
 }
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  .main {
+    flex: 1; /* Or flex-grow: 1;*/
+  }

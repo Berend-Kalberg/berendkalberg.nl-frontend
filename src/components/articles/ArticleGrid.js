@@ -26,7 +26,7 @@ const ArticleGrid = () => {
     return isLoading ? (
     <Spinner /> 
     ) : (
-    <div className="h-screen">
+    <div className=" flex-grow">
         <SearchBar getQuery={(q) => setQuery(q)}/>
         {items.map(item =>(
             <ArticleItem key={item.id} item={item}></ArticleItem>

@@ -18290,10 +18290,6 @@ nav {
     font-size: 0.5rem;
   }
 
-  .markdown img {
-    width: 100% !important;
-  }
-
   .container {
     max-width: 95vw;
   }
@@ -18304,20 +18300,12 @@ nav {
     font-size: 0.75rem;
   }
 
-  .markdown img {
-    width: 60% !important;
-  }
-
   .container {
     max-width: 80vw;
   }
 }
 
 @media (min-width: 1024px) {
-  .markdown img {
-    width: 50% !important;
-  }
-
   .container {
     max-width: 60vw;
   }
@@ -18385,6 +18373,16 @@ nav {
   --bg-opacity: 1 !important;
   background-color: #f7fafc !important;
   background-color: rgba(247, 250, 252, var(--bg-opacity)) !important;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1; /* Or flex-grow: 1;*/
 }
 
 @media (min-width: 0px) {
