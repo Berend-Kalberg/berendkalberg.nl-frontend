@@ -169,12 +169,24 @@ nav {
 
 @screen sm {
     .pdf {
-        height: 300px;
+        height: 30vh;
     }
 }
 
 
 @screen md {
+    .masthead div h2 {
+        font-size: 3.5em !important;
+    }
+    .masthead-white div h2 {
+        font-size: 3.5em !important;
+    }
+    .pdf {
+        height: 45vh;
+    }
+}
+
+@screen lg {
     .masthead div h2 {
         font-size: 4.5em !important;
     }
@@ -182,13 +194,7 @@ nav {
         font-size: 4.5em !important;
     }
     .pdf {
-        height: 30vh;
-    }
-}
-
-@screen lg {
-    .pdf {
-        height: 700px;
+        height: 60vh;
     }
 }
 
@@ -356,6 +362,8 @@ padding-bottom: 0.125rem;
 .markdown .highlight pre {
 @apply bg-gray-100 !important;
 }
+
+/* Footer */
 
 body {
     display: flex;

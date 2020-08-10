@@ -18094,11 +18094,25 @@ nav {
 
 @media (min-width: 0px) {
   .pdf {
-    height: 300px;
+    height: 30vh;
   }
 }
 
 @media (min-width: 768px) {
+  .masthead div h2 {
+    font-size: 3.5em !important;
+  }
+
+  .masthead-white div h2 {
+    font-size: 3.5em !important;
+  }
+
+  .pdf {
+    height: 45vh;
+  }
+}
+
+@media (min-width: 1024px) {
   .masthead div h2 {
     font-size: 4.5em !important;
   }
@@ -18108,13 +18122,7 @@ nav {
   }
 
   .pdf {
-    height: 30vh;
-  }
-}
-
-@media (min-width: 1024px) {
-  .pdf {
-    height: 700px;
+    height: 60vh;
   }
 }
 
@@ -18374,6 +18382,8 @@ nav {
   background-color: #f7fafc !important;
   background-color: rgba(247, 250, 252, var(--bg-opacity)) !important;
 }
+
+/* Footer */
 
 body {
   display: flex;
