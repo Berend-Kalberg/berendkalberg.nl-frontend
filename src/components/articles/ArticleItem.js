@@ -5,7 +5,45 @@ const ArticleItem = ({ item }) => {
 
     const all = item.categories
     const result = all.map(a => a.name)
+
+    var publishedDate =item.published;
+
+
+    const d = new Date(publishedDate)
+    const year = d.getFullYear()
+    const date = d.getDate()
    
+    const months = {
+        0: 'januari',
+        1: 'februari',
+        2: 'maart',
+        3: 'april',
+        4: 'mei',
+        5: 'juni',
+        6: 'juli',
+        7: 'augustus',
+        8: 'september',
+        9: 'oktober',
+        10: 'november',
+        11: 'december'
+    }
+
+    const monthName = months[d.getMonth()]
+
+    const days = [
+        'Zo',
+        'Ma',
+        'Di',
+        'Wo',
+        'Do',
+        'Vri',
+        'Zat'
+    ]
+
+    const dayName = days[d.getDay()]
+
+    const formatted = `${dayName}, ${date} ${monthName} ${year}`
+    
     return (
 
         <div className="lg:w-3/4 sm:w-3/4 md:w-1/2 lg:flex mx-auto mt-20 shadow-lg">
@@ -24,12 +62,11 @@ const ArticleItem = ({ item }) => {
                     </Link>
                 </div>
                 <div className="">
-                    <p className="text-gray-600 text-xs">Gepubliceerd op: <span className="text-orange-500 text-xs">{item.published}</span></p>
+                    <p className="text-gray-600 text-xs"><span className="text-orange-500 text-xs">{formatted}</span></p>
                     <div className="flex">
-                    <p className="text-gray-600 text-xs">Categorieën:</p>
                         <div className="flex">
                             {result.map((category) => (
-                                <p className="text-blue-500 text-xs pl-1" key={category}>{category}</p>
+                                <p className="text-blue-500 text-xs bg-blue-100 p-2 mr-1 rounded-lg" key={category}>{category}</p>
                             ))}
                         </div>
                     </div>
