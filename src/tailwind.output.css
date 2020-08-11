@@ -18375,6 +18375,12 @@ nav {
   width: 60%;
 }
 
+@media (min-width: 0px) {
+  .markdown img {
+    width: 100%
+  }
+}
+
 /* Override pygments style background color. */
 
 .markdown .highlight pre {

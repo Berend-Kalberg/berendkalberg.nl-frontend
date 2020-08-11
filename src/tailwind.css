@@ -358,6 +358,12 @@ padding-bottom: 0.125rem;
     @apply mx-auto w-3/5;
 }
 
+@screen sm {
+    .markdown img {
+        @apply w-full
+    }
+}
+
 /* Override pygments style background color. */
 .markdown .highlight pre {
 @apply bg-gray-100 !important;
