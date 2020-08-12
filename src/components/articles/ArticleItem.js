@@ -46,9 +46,9 @@ const ArticleItem = ({ item }) => {
     
     return (
 
-        <div className="lg:w-3/4 sm:w-3/4 md:w-1/2 lg:flex mx-auto mt-20 shadow-lg">
+        <div className="lg:w-3/4 sm:w-3/4 md:w-1/2 lg:flex mx-auto my-20 shadow-lg">
             <div className="border-r border-l border-t rounded-t border-gray-400 lg:border-t lg:border-r-0 lg:border-b lg:rounded-t-none lg:rounded-l lg:border-gray-400 bg-white p-4">
-                <div className="lg:h-48 lg:w-48 sm:w-48 sm:mx-auto flex-none bg-cover rounded  text-center overflow-hidden">
+                <div className="fit-thumbnail lg:w-48 sm:w-48 sm:mx-auto align-middle flex-none bg-cover rounded text-center overflow-hidden">
                     <Link to={`/blog/${item.slug}`}>
                         <img src={item.thumbnail.url} alt='thumbnail'/>
                     </Link>
@@ -61,8 +61,8 @@ const ArticleItem = ({ item }) => {
                         <h2 className="text-gray-800 text-xl mb-2">{item.title}</h2>
                     </Link>
                 </div>
-                <div className="">
-                    <p className="text-gray-600 text-xs"><span className="text-orange-500 text-xs">{formatted}</span></p>
+                <div>
+                    <p className="fit-content text-orange-500 bg-orange-100 text-xs p-2 mb-2 rounded-lg">{formatted}</p>
                     <div className="flex">
                         <div className="flex">
                             {result.map((category) => (

@@ -44,7 +44,7 @@ const ItemDetail = ( {match} ) => {
 
     <Spinner /> 
     ) : (
-    <div className="mx-auto container pt-20 px-4" target="_blank">
+    <div className="mx-auto container pt-6 px-4" target="_blank">
         <div className="markdown">
             <ReactMarkdown source={item[0].content}/>
         </div>

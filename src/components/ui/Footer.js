@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className="p-4 masthead text-center mt-20">
+        <footer className="p-4 masthead text-center">
             <div>
                 <h2>Praatje maken?</h2>
                 <br></br>

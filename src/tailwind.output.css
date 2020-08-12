@@ -18025,6 +18025,16 @@ main {
   flex-grow: 1; /* Or flex-grow: 1;*/
 }
 
+.fit-content {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.fit-thumbnail {
+  max-height: 12rem;
+}
+
 @media (min-width: 300px) {
   .sm\:w-3\/4 {
     width: 75%;
@@ -18369,15 +18379,25 @@ nav {
   padding-right: 0.75rem;
 }
 
-.markdown img {
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-}
-
 @media (min-width: 0px) {
   .markdown img {
-    width: 100%
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .markdown img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .markdown img {
+    width: 60%;
   }
 }
 

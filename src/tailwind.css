@@ -101,6 +101,14 @@ body {
     flex-grow: 1; /* Or flex-grow: 1;*/
   }
 
+  .fit-content {
+      max-width: fit-content;
+  }
+
+.fit-thumbnail {
+ max-height: 12rem;
+}
+
 @media (min-width: 300px) {
     .sm\:w-3\/4 {
         width: 75%;
@@ -354,13 +362,21 @@ padding-bottom: 0.125rem;
 @apply border py-1 px-3;
 }
 
-.markdown img {
-    @apply mx-auto w-3/5;
-}
-
 @screen sm {
     .markdown img {
-        @apply w-full
+        @apply w-full mx-auto;
+    }
+}
+
+@screen md {
+    .markdown img {
+        @apply w-4/5 mx-auto;
+    }
+}
+
+@screen lg {
+    .markdown img {
+        @apply w-3/5;
     }
 }
 
