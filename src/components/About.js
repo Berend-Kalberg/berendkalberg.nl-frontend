@@ -50,7 +50,7 @@ const About = () => {
                     <br></br>
                     <h3>Bekijk hier mijn CV</h3>
                     <br></br>
-                    <div className="flex mx-auto lg:px-2">
+                    <div className="flex mx-auto lg:px-40">
                     <iframe className="pdf" src="./resume.pdf" type="application/pdf" width="100%" title="CV Berend Kalberg">
                         Deze browser ondersteund geen PDF's. Download de PDF om deze in te zien
                     </iframe>

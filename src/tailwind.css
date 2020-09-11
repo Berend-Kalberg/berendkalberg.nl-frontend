@@ -368,18 +368,6 @@ padding-bottom: 0.125rem;
     }
 }
 
-@screen md {
-    .markdown img {
-        @apply w-4/5 mx-auto;
-    }
-}
-
-@screen lg {
-    .markdown img {
-        @apply w-3/5;
-    }
-}
-
 /* Override pygments style background color. */
 .markdown .highlight pre {
 @apply bg-gray-100 !important;

@@ -29,7 +29,7 @@ const ItemDetail = ( {match} ) => {
             content: "",
             id: "",
             published: "",
-            title: "Deze pagina bestaat niet",
+            title: "",
         }]
 
         if (item.length === 0) {
