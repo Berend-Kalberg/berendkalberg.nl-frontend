@@ -8,6 +8,7 @@ import About from './components/About'
 import ArticleGrid from './components/articles/ArticleGrid'
 import ItemDetail from './components/articles/ItemDetail'
 import BlogHeader from './components/articles/BlogHeader'
+import ScrollToTop from './ScrollToTop'
 
 const NoMatch = () => (
     <Redirect to="/"/>
@@ -19,6 +20,7 @@ const App = () => {
     return (
         <div>
             <Router >
+                <ScrollToTop />
                 <Nav />
                 <Route exact path="/blog" component={BlogHeader}/>
                 <Switch>
