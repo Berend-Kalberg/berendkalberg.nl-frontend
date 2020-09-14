@@ -1,5 +1,5 @@
 import React from 'react'
-import profile from '../../assets/profile-circle.png'
+import profile from '../../assets/profile-circle.jpeg'
 
 const Header = () => {
     return (
