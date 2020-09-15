@@ -274,8 +274,6 @@ padding-bottom: 0.125rem;
     .markdown pre code {
         font-size: 0.5rem;
     }
-
-
     .container {
         max-width: 95vw;
     }
@@ -285,14 +283,12 @@ padding-bottom: 0.125rem;
     .markdown pre code {
         @apply text-xs;
     }
-
     .container {
         max-width: 80vw;
     }
 }
 
 @screen lg {
-
     .container {
         max-width: 60vw;
     }
@@ -324,7 +320,14 @@ padding-bottom: 0.125rem;
 
 @screen sm {
     .markdown img {
-        @apply w-full mx-auto;
+        @apply w-auto mx-auto max-h-screen;
+    }
+}
+
+@screen md {
+    .markdown img {
+        @apply w-auto;
+        max-height: 80vh;
     }
 }
 
