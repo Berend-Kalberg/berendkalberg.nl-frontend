@@ -26,17 +26,22 @@ const About = () => {
                     <h3>Creative Media &amp; Game Technologies <span className="text-blue-500"><a href="https://www.hogeschoolrotterdam.nl/opleidingen/bachelor/creative-media-and-game-technologies/voltijd/">@Hogeschool Rotterdam</a></span></h3>
                 </div>
             </div>
-            <div className="masthead-white sm:px-2">
-                <div>
-                    <h2>Gepassioneerd</h2>
-                    <br></br>
-                    <ul>
-                        <li>Coder</li>
-                        <li>Thinker</li>
-                        <li>Maker</li>
-                    </ul>
+            <section id="passionated">
+                <div className="masthead-white sm:px-2">
+                    <div>
+                        <a href="#passionated">
+                            <h2>Gepassioneerd</h2>
+                        </a>
+                        <br></br>
+                        <ul>
+                            <li>Coder</li>
+                            <li>Thinker</li>
+                            <li>Maker</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
+            </section>
+           
             <div className="masthead-white sm:px-2">
                 <div>
                     <h2>Meer weten over mijn werk?</h2>
