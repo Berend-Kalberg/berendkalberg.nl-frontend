@@ -24,9 +24,14 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <link rel="preload" href="./src/assets/fonts/GothamRounded-Book.18415199.woff" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="./src/assets/fonts/GothamRounded-Bold.9a48d54d.woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="./src/assets/fonts/GothamRounded-Book.woff" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="./src/assets/fonts/GothamRounded-Bold.woff2" as="font" crossorigin="anonymous" />
+    
     <link rel="prefetch" href="./src/assets/profile-circle.png" as="image" crossorigin="anonymous" />
+
+    <link rel="preload" href="/src/tailwind.output.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./src/tailwind.output.css"></noscript>
+
     <title>Berend Kalberg - Webdeveloper</title>
 
   </head>

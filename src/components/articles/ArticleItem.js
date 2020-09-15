@@ -63,7 +63,7 @@ const ArticleItem = ({ item }) => {
                 </div>
                 <div>
                     <p className="fit-content text-orange-500 bg-orange-100 text-xs p-2 mb-2 rounded-lg">{formatted}</p>
-                    <div className="flex overflow-scroll">
+                    <div className="flex overflow-scroll scroll-hidden">
                         {result.map((category) => (
                             <p className="text-blue-500 text-xs bg-blue-100 p-2 mr-1 rounded-lg" key={category}>{category}</p>
                         ))}

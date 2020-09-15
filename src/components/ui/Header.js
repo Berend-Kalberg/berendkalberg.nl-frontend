@@ -12,7 +12,7 @@ const Header = () => {
                 <h2>
                     DEVELOPER
                 </h2>
-                <h3>Opzoek naar meewerkstage periode september - december/januari</h3>
+                <h3 className="px-2 mt-10">Opzoek naar meewerkstage periode september - december/januari</h3>
             </div>
         </div>
     )
