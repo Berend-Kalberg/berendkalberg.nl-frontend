@@ -13,6 +13,9 @@ const Header = () => {
                     DEVELOPER
                 </h2>
                 <h3 className="px-2 mt-10">Opzoek naar meewerkstage periode september - december/januari</h3>
+                <a href="#over">
+                    <div class='icon-scroll'></div>
+                </a>
             </div>
         </div>
     )
