@@ -30,9 +30,8 @@ const App = () => {
                             <About />
                         </div>
                     } />
-
                     <Route exact path="/blog" component={ArticleGrid}/>  
-                    <Route exact={true} path="/blog/:slug" component={ItemDetail}/>
+                    <Route exact path="/blog/:slug" component={ItemDetail}/>
                     <Route component={NoMatch} />      
                 </Switch>
                 <Footer />
