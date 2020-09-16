@@ -22250,7 +22250,7 @@ video {
 
 /* Basic Styling */
 
-* {
+*, html {
   box-sizing: border-box;
   color: #767777;
   font-family: 'Gotham Rounded Book';
@@ -22496,7 +22496,7 @@ nav {
   font-size: 1.875rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 4rem;
   padding-bottom: 0.5rem;
 }
 

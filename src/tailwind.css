@@ -29,7 +29,7 @@
 
 /* Basic Styling */
 
-* {
+*, html {
     box-sizing: border-box;
     color: #767777;
     font-family: 'Gotham Rounded Book';
@@ -221,7 +221,7 @@ padding-bottom: 0.125rem;
 }
 
 .markdown {
-    @apply text-xs;
+    @apply text-sm;
 }
 
 .markdown {
@@ -253,7 +253,7 @@ padding-bottom: 0.125rem;
 }
 
 .markdown h1 {
-@apply leading-tight text-3xl font-semibold mb-4 mt-6 pb-2;
+@apply leading-tight text-3xl font-semibold mb-4 mt-16 pb-2;
 }
 
 .markdown h2 {
