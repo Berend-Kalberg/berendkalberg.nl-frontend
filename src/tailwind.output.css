@@ -22309,8 +22309,12 @@ nav {
 }
 
 #menu-toggle:checked + #menu {
+  transition: linear 1s;
   display: block;
-  transition: linear 2s;
+}
+
+.ease {
+  transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 1s;
 }
 
 /* Header & About */
@@ -22420,9 +22424,9 @@ nav {
 /* Scroll animation header */
 
 .animate-bounce {
-  position: absolute;
-  left: 50%;
   color: #ff8a00 !important;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* Blog items */
