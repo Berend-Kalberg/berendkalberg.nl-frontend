@@ -8,7 +8,7 @@ const Footer = () => {
                 <br></br>
                 <h3>E-mail: <span className="text-orange-500">berend.kalberg@gmail.com</span></h3>
                 <h3>Telefoonnummer: <span className="text-orange-500">+31648576944</span></h3>
-                <h3>Locatie: <span className="text-orange-500">Hendrik-Ido-Ambachtgit </span></h3>
+                <h3>Locatie: <span className="text-orange-500">Hendrik-Ido-Ambacht</span></h3>
             </div>
         </footer>
     )
