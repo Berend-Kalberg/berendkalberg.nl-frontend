@@ -9,7 +9,9 @@ const About = () => {
             <section id="student">
                 <div className="masthead-white sm:px-2">
                     <div>
-                        <h2>Student</h2>
+                        <a href="#student">
+                            <h2>Student</h2>
+                        </a>
                         <br></br>
                         <h3>Creative Media &amp; Game Technologies <span className="text-blue-500"><a href="https://www.hogeschoolrotterdam.nl/opleidingen/bachelor/creative-media-and-game-technologies/voltijd/">@Hogeschool Rotterdam</a></span></h3>
                     </div>
@@ -33,7 +35,9 @@ const About = () => {
             <section id="portfolio">
                 <div className="masthead-white sm:px-2">
                     <div>
-                        <h2>Meer weten over mijn werk?</h2>
+                        <a href="#portfolio">
+                            <h2>Meer weten over mijn werk?</h2>
+                        </a>
                         <br></br>
                         <h3>Bekijk mijn <span className="text-blue-500"><a href="/blog">blog</a></span></h3>
                     </div>
@@ -42,14 +46,13 @@ const About = () => {
             <section id="experience">
                 <div className="masthead-white sm:px-2">
                     <div>
-                        <h2>Niewsgierig naar mijn ervaring?</h2>
-                        <br></br>
-                        <h3>Bekijk hier mijn CV</h3>
-                        <br></br>
-                        <div className="flex mx-auto lg:px-40">
-                        <iframe className="pdf" src="./resume.pdf" type="application/pdf" width="100%" title="CV Berend Kalberg">
-                            Deze browser ondersteund geen PDF's. Download de PDF om deze in te zien
-                        </iframe>
+                        <a href="#experience">
+                            <h2>Nieuwsgierig naar mijn ervaring?</h2>
+                        </a>
+                        <div className="flex mx-auto lg:px-40 mt-10">
+                            <iframe className="pdf" src="./resume.pdf" type="application/pdf" width="100%" title="CV Berend Kalberg">
+                                Deze browser ondersteund geen PDF's. Download de PDF om deze in te zien
+                            </iframe>
                         </div>
                     </div>
                 </div>

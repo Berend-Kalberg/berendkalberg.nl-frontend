@@ -47,8 +47,8 @@ const Nav = () => {
             <div className="hidden md:flex md:items-center md:w-auto w-full" id="menu">
             <nav>
                 <ul className="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
-                    <li><a className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-orange-500" href="/#over">Over</a></li>
-                    <li><a className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-orange-500" href="/blog">Blog</a></li>
+                    <li><a className="lg:p-4 py-3 sm:px-3 block border-b-2 border-transparent hover:border-orange-500" href="/#over">Over</a></li>
+                    <li><a className="lg:p-4 py-3 sm:px-3 block border-b-2 border-transparent hover:border-orange-500" href="/blog">Blog</a></li>
                 </ul>
             </nav>
            

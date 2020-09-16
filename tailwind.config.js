@@ -1,8 +1,14 @@
 module.exports = {
+future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+    },
   purge: [],
   theme: {
     screens: {
-        'sm': '0px',
+        'xs': '0px',
+
+        'sm': '400px',
         // => @media (min-width: 0px) { ... }
   
         'md': '768px',
