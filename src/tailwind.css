@@ -148,7 +148,7 @@ nav {
         width: 128px;
     }
     .masthead div h2, .masthead-white div h2 {
-        font-size: 2em;
+        font-size: 1.5em;
         line-height: 41px;
     }
 
@@ -159,7 +159,7 @@ nav {
 
 @screen sm {
     .masthead div h2, .masthead-white div h2 {
-        font-size: 3em;
+        font-size: 2em;
         line-height: 51px;
     }
     .pdf {
@@ -173,7 +173,7 @@ nav {
 
 @screen md {
     .masthead div h2, .masthead-white div h2 {
-        font-size: 3.5em;
+        font-size: 3em;
         line-height: 71px
     }
     .pdf {
@@ -183,7 +183,7 @@ nav {
 
 @screen lg {
     .masthead div h2, .masthead-white div h2 {
-        font-size: 4.5em;
+        font-size: 4em;
         line-height: 81px;
     }
     .pdf {
