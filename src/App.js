@@ -1,5 +1,6 @@
 import React from 'react'
-import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
+import CookieConsent from "react-cookie-consent"
 
 import Nav from './components/ui/Nav'
 import Footer from './components/ui/Footer'
@@ -35,6 +36,12 @@ const App = () => {
                     <Route component={NoMatch} />      
                 </Switch>
                 <Footer />
+                <CookieConsent
+                    Location="bottom"
+                    buttonText="Ik begrijp het"
+                > 
+                Deze website maakt gebruik van cookies.
+                </CookieConsent>
             </Router>
         </div>
     )
