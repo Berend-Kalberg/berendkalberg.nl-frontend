@@ -39,8 +39,10 @@ const App = () => {
                 <CookieConsent
                     Location="bottom"
                     buttonText="Ik begrijp het"
+                    buttonStyle={{ background: "#ff8a00"}}
+                    style={{ background: "#fff", boxShadow: "0 -25px 50px -12px rgba(0, 0, 0, 0.25)"}}
                 > 
-                Deze website maakt gebruik van cookies.
+                Deze website maakt gebruik van cookies en trackers.
                 </CookieConsent>
             </Router>
         </div>
