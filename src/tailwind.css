@@ -38,6 +38,18 @@
     -webkit-font-smoothing: antialiased;
 }
 
+@screen qhd {
+  *, html {
+    font-size: 27px;
+  }
+}
+
+@screen uhd {
+  *, html {
+    font-size: 40px;
+  }
+}
+
 body {
     display: flex;
     min-height: 100vh;
@@ -189,6 +201,30 @@ nav {
     .pdf {
         height: 60vh;
     }
+}
+
+@screen qhd {
+  .masthead div h2, .masthead-white div h2 {
+      line-height: 110px;
+  }
+  .pdf {
+      height: 60vh;
+  }
+  .header-img {
+    width: 386px;
+}
+}
+
+@screen uhd {
+  .masthead div h2, .masthead-white div h2 {
+      line-height: 160px;
+  }
+  .pdf {
+      height: 60vh;
+  }
+  .header-img {
+    width: 548px;
+}
 }
 
 /* Scroll animation header */
